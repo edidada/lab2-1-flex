@@ -1,0 +1,270 @@
+# my
+
+/Users/ibqo/Develop/git/github/c/lab2-1-flex/cmake-build-debug/scanner ../test_cases/case_1.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+int : INT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+a : ID
+= : ASSIGN
+10 : INT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+2 : INT_LIT
+; : SEMICOLON
+return : RETURN
+a : ID
++ : ADD
+  b : ID
+  ; : SEMICOLON
+  } : RC
+
+Process finished with exit code 0
+
+/Users/ibqo/Develop/git/github/c/lab2-1-flex/cmake-build-debug/scanner ../test_cases/case_2.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+int : INT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+a : ID
+= : ASSIGN
+0xf : INT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+0xc : INT_LIT
+; : SEMICOLON
+return : RETURN
+a : ID
++ : ADD
+  b : ID
++ : ADD
+  075 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+
+/Users/ibqo/Develop/git/github/c/lab2-1-flex/cmake-build-debug/scanner ../test_cases/case_3.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+float : FLOAT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+int : INT
+c : ID
+= : ASSIGN
+0 : INT_LIT
+85 : INT_LIT
+; : SEMICOLON
+a : ID
+= : ASSIGN
+020e-04f : FLOAT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+getfloat : ID
+( : LP
+) : RP
+; : SEMICOLON
+putfloat : ID
+( : LP
+a : ID
++ : ADD
+  b : ID
+  ) : RP
+  ; : SEMICOLON
+  putch : ID
+  ( : LP
+  10 : INT_LIT
+  ) : RP
+  ; : SEMICOLON
+  return : RETURN
+  0 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+
+/Users/ibqo/Develop/git/github/c/lab2-1-flex/cmake-build-debug/scanner ../test_cases/case_4.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+float : FLOAT
+pi : ID
+= : ASSIGN
+3 : INT_LIT
+l14 : ID
+; : SEMICOLON
+float : FLOAT
+r : ID
+= : ASSIGN
+2f : FLOAT_LIT
+; : SEMICOLON
+float : FLOAT
+area : ID
+= : ASSIGN
+pi : ID
+* : MUL
+  r : ID
+* : MUL
+  r : ID
+  ; : SEMICOLON
+  putfloat : ID
+  ( : LP
+  area : ID
+  ) : RP
+  ; : SEMICOLON
+  } : RC
+
+/Users/ibqo/Develop/git/github/c/lab2-1-flex/cmake-build-debug/scanner ../test_cases/case_5.c
+nt : ID
+get : ID
+Lexical error - line 1 : _
+one : ID
+( : LP
+int : INT
+a : ID
+) : RP
+{ : LC
+return : RETURN
+1 : INT_LIT
+; : SEMICOLON
+} : RC
+int : INT
+deepWhileBr : ID
+( : LP
+int : INT
+a : ID
+, : COMMA
+int : INT
+b : ID
+) : RP
+{ : LC
+int : INT
+c : ID
+; : SEMICOLON
+c : ID
+= : ASSIGN
+a : ID
++ : ADD
+  b : ID
+  ; : SEMICOLON
+  while : WHILE
+  ( : LP
+  c : ID
+  < : LT
+  75 : INT_LIT
+  ) : RP
+  { : LC
+  int : INT
+  d : ID
+  ; : SEMICOLON
+  d : ID
+  = : ASSIGN
+  42 : INT_LIT
+  ; : SEMICOLON
+  if : IF
+  ( : LP
+  c : ID
+  < : LT
+  100 : INT_LIT
+  ) : RP
+  { : LC
+  c : ID
+  = : ASSIGN
+  c : ID
++ : ADD
+  d : ID
+  ; : SEMICOLON
+  if : IF
+  ( : LP
+  c : ID
+> : GT
+99 : INT_LIT
+) : RP
+{ : LC
+int : INT
+e : ID
+; : SEMICOLON
+e : ID
+= : ASSIGN
+d : ID
+* : MUL
+  2 : INT_LIT
+  ; : SEMICOLON
+  if : IF
+  ( : LP
+  get : ID
+  Lexical error - line 16 : _
+  one : ID
+  ( : LP
+  0 : INT_LIT
+  ) : RP
+  == : EQ
+  1 : INT_LIT
+  ) : RP
+  { : LC
+  c : ID
+  = : ASSIGN
+  e : ID
+* : MUL
+  2 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+  } : RC
+  } : RC
+  } : RC
+  return : RETURN
+  ( : LP
+  c : ID
+  ) : RP
+  ; : SEMICOLON
+  } : RC
+  int : INT
+  main : ID
+  ( : LP
+  ) : RP
+  { : LC
+  int : INT
+  p : ID
+  ; : SEMICOLON
+  p : ID
+  = : ASSIGN
+  2 : INT_LIT
+  ; : SEMICOLON
+  p : ID
+  = : ASSIGN
+  deepWhileBr : ID
+  ( : LP
+  p : ID
+  , : COMMA
+  p : ID
+  ) : RP
+  ; : SEMICOLON
+  putint : ID
+  ( : LP
+  p : ID
+  ) : RP
+  ; : SEMICOLON
+  return : RETURN
+  0 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+
